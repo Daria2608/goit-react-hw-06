@@ -31,7 +31,6 @@ export default function ContactForm() {
         const id = nanoid();
         values.id = id;
         actions.resetForm();
-        onAdd(values)
     }
 
     

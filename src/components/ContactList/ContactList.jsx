@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux"
-import Contacts from "../Contacts/Contacts"
+import Contact from "../Contact/Contact"
 import css from './ContactList.module.css'
 
 export default function ContactList() {
@@ -11,7 +11,7 @@ export default function ContactList() {
         <ul className={css.list}>
             {filterContacts.map((contact) => (
                 <li className={css.listItem} key={contact.id}>
-                    <Contacts data={contact} />
+                    <Contact data={contact} />
                 </li>
             ))}
         </ul>
